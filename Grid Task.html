@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid task</title>
+        <style>
+            #name1:hover + #name2{
+           column-gap: 10px;
+           row-gap: 10px;
+            }
+            #name1{
+                background-color: rgb(62, 191, 189);
+                width: 200px;
+            height: 20px;
+            padding-top: 10px;
+            padding-left: 10px;
+            margin-left: 650px;
+            margin-top: 30px;
+            }
+            #name2{
+                width: 500px;
+                height: 500px;
+                display: grid;
+                grid-template-columns: 200px 200px 200px;
+                grid-template-rows: 200px 200px 200px;
+                margin-left: 400px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h2 style="text-align: center;">PHOTOFOLIO</h2>
+        <p style="text-align: center;">A template made by w3.css photographers</p>
+        <p id="name1">TOGGLE GRID PADDING</p>
+        <div id="name2">
+         <div style="grid-row: 1/4;"> <img src="./rock.jpg" width="200px" height="100%"></div>
+           <div style="grid-column: 2/4;"> <img src="./coffee.jpg" width="400px"height="100%"></div>
+           <div><img src="./mist.jpg" width="200px" height="200px"></div>
+            <div><img src="./bridge.jpg" width="200px" height="200px"></div>
+                <div style="grid-column: 2/4;"> <img src="./workbench.jpg" width="400px" height="100%"></div>
+            <div style="grid-column: 1/3;"> <img src="./lights.jpg" width="400px"height="100%"></div>
+            <div> <img src="./gondol.jpg" width="200px"height="100%"></div>
+            
+            
+            </div>
+    </body>
+</html>
